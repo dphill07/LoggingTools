@@ -1,0 +1,6 @@
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\obj\Debug\LoggingTools.csprojResolveAssemblyReference.cache
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\bin\Debug\LoggingTools.dll.config
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\bin\Debug\LoggingTools.dll
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\bin\Debug\LoggingTools.pdb
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\obj\Debug\LoggingTools.dll
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\obj\Debug\LoggingTools.pdb

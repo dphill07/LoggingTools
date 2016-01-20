@@ -1,0 +1,5 @@
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\bin\Release\LoggingTools.dll.config
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\bin\Release\LoggingTools.dll
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\bin\Release\LoggingTools.pdb
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\obj\Release\LoggingTools.dll
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\obj\Release\LoggingTools.pdb
