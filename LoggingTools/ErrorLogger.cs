@@ -8,7 +8,7 @@ namespace LoggingTools
 {
     public static class ErrorLogger
     {
-        private static string _connectionString = "Server=bosql;Database=SoftwareAccess;User ID=softwareaccess;Password=G!v3M3@ccess";
+        private static string _connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Derek\Desktop\Git\ProgramAdmin\ProgramAdmin\ProgramAdmin\LoggingTools.mdf;Integrated Security=True;";
         private static int programId = Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["programId"]);
         private static Exception exception;
         private static string filePath;
@@ -27,11 +27,11 @@ namespace LoggingTools
                 using (SqlConnection conn = new SqlConnection(_connectionString))
                 {
                     conn.Open();
-                    var command = new SqlCommand(@"INSERT INTO ProgramErrors
-                                                            (ProgramId, ComputerName, UserName, UserDomainName, Data, HelpLink, HResult, InnerException, Message,
+                    var command = new SqlCommand(@"INSERT INTO Errors
+                                                            (TimeStamp, ProgramId, ComputerName, UserName, UserDomainName, Data, HelpLink, HResult, InnerException, Message,
                                                                 Source, StackTrace, TargetSite)
                                                           VALUES
-                                                            (@ProgramId, @ComputerName, @UserName, @UserDomainName, @Data, @HelpLink, @HResult, @InnerException, @Message,
+                                                            (GETDATE(), @ProgramId, @ComputerName, @UserName, @UserDomainName, @Data, @HelpLink, @HResult, @InnerException, @Message,
                                                                 @Source, @StackTrace, @TargetSite)")
                     {
                         CommandType = CommandType.Text,

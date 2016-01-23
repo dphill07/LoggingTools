@@ -12,7 +12,7 @@ namespace LoggingTools
 {
     public static class UsageLogger
     {
-        private static readonly string _connectionString = "Server=bosql;Database=SoftwareAccess;User ID=softwareaccess;Password=G!v3M3@ccess";
+        private static readonly string _connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Derek\Desktop\Git\ProgramAdmin\ProgramAdmin\ProgramAdmin\LoggingTools.mdf;Integrated Security=True;";
         private static readonly int programId = Convert.ToInt32(ConfigurationManager.AppSettings["programId"]);
         private static string _filePath;
         private static string _programId;
@@ -33,7 +33,7 @@ namespace LoggingTools
                 using (var conn = new SqlConnection(_connectionString))
                 {
                     conn.Open();
-                    var cmd = new SqlCommand(@"INSERT INTO ProgramLogs
+                    var cmd = new SqlCommand(@"INSERT INTO Logs
                                                             (ProgramId, ComputerName, UserName, UserDomainName, UserAction, Information, SQLCommand)
                                                           VALUES
                                                             (@ProgramId, @ComputerName, @UserName, @UserDomainName, @UserAction, @Information, @SQLCommand)")
@@ -104,7 +104,7 @@ namespace LoggingTools
                 using (var conn = new SqlConnection(_connectionString))
                 {
                     conn.Open();
-                    var cmd = new SqlCommand(@"INSERT INTO ProgramLogs
+                    var cmd = new SqlCommand(@"INSERT INTO Logs
                                                             (ProgramId, ComputerName, UserName, UserDomainName, Information, SQLCommand)
                                                           VALUES
                                                             (@ProgramId, @ComputerName, @UserName, @UserDomainName, @Information, @SQLCommand)")

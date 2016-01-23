@@ -3,3 +3,4 @@ C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\bin\Release\LoggingTools.dl
 C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\bin\Release\LoggingTools.pdb
 C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\obj\Release\LoggingTools.dll
 C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\obj\Release\LoggingTools.pdb
+C:\Users\Derek\Desktop\Git\LoggingTools\LoggingTools\obj\Release\LoggingTools.csprojResolveAssemblyReference.cache

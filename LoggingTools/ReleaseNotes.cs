@@ -10,7 +10,7 @@ namespace LoggingTools
 {
     public static class ReleaseNotes
     {
-        private const string ConnectionString = "Server=bosql;Database=SoftwareAccess;User ID=softwareaccess;Password=G!v3M3@ccess";
+        private const string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Derek\Desktop\Git\ProgramAdmin\ProgramAdmin\ProgramAdmin\LoggingTools.mdf;Integrated Security=True;";
         private static readonly int ProgramId = Convert.ToInt32(ConfigurationManager.AppSettings["programId"]);
         public static void Initialize()
         {
